@@ -1,0 +1,7 @@
+Do NOT upload big datasets to GitHub.
+
+Instead:
+- Put dataset in Google Drive
+- Or use a public dataset URL (Kaggle/UCI/etc.)
+- In the repo, add:
+    - data/README.md explaining how to fetch the data
