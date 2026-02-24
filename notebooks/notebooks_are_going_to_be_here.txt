@@ -4,3 +4,15 @@ Make your notebooks easy to read:
 - Keep outputs that support your story
 - Remove noisy prints
 - Keep code runnable top to bottom
+
+---
+
+Use naming like:
+- 01_eda.ipynb
+- 02_baseline_model.ipynb
+- 03_feature_engineering.ipynb
+- 04_final_model.ipynb
+
+Or per person:
+- eda_nafe.ipynb
+- model_sara.ipynb
