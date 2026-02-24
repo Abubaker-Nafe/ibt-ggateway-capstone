@@ -9,7 +9,7 @@
 - Nafe Abubaker    (Role: <EDA / Modeling / Data / Slides / Integrator>)
 - Tala Hliqawi     (Role: ...)
 - Ayham AlDuwairi  (Role: ...)
-- Masa Emwas       (Role: ...)
+- Afaf Amwas       (Role: ...)
 - Abood Zaghloul   (Role: ...)
 
 ## 3) Dataset
