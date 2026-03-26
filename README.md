@@ -2,7 +2,9 @@
 
 ## 1) Overview
 **Goal:** Build a machine learning model to predict whether a student is at risk of dropping out of high school using HSLS:09 student-level data, so schools and policymakers can identify at-risk students early and intervene effectively.
+
 **Track:** Supervised  
+
 **Primary Metric:** F1-score
 
 ## 2) Team
