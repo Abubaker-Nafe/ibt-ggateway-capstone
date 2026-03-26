@@ -10,7 +10,7 @@
 - Tala Hliqawi     (Role: Slides Lead, EDA and Visuals Lead, Documentation Lead)
 - Ayham AlDuwairi  (Role: Modeling Lead, Documentation Lead, GitHub Lead)
 - Afaf Amwas       (Role: Project Coordinator, Data Lead, EDA and Visuals Lead)
-- Heba Qasim       (Role: TBD / confirm with proposal or team)
+- Heba Qasim       (Role: EDA and visuals lead, Documentation lead)
 
 ## 3) Dataset
 - **Source:** HSLS:09 (High School Longitudinal Study of 2009), National Center for Education Statistics (NCES), U.S. Department of Education
