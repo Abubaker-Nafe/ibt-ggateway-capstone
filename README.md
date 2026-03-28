@@ -8,11 +8,11 @@
 **Primary Metric:** F1-score
 
 ## 2) Team
-- Nafe Abubaker    (Role: Project Coordinator, Data Lead, Modeling Lead, Github Lead)
-- Tala Hliqawi     (Role: Slides Lead, EDA and Visuals Lead, Documentation Lead)
+- Nafe Abubaker    (Role: Project Coordinator, Data Lead, EDA Lead, Github Lead)
+- Tala Hliqawi     (Role: Slides Lead, Modeling Lead, Documentation Lead)
 - Ayham AlDuwairi  (Role: Modeling Lead, Documentation Lead, GitHub Lead)
 - Afaf Amwas       (Role: Project Coordinator, Data Lead, EDA and Visuals Lead)
-- Heba Qasim       (Role: EDA and visuals lead, Documentation lead)
+- Heba Qasim       (Role: Data Cleaning lead, Documentation lead)
 
 ## 3) Dataset
 - **Source:** HSLS:09 (High School Longitudinal Study of 2009), National Center for Education Statistics (NCES), U.S. Department of Education
