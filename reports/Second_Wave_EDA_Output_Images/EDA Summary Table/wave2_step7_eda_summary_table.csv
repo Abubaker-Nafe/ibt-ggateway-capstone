@@ -1,0 +1,16 @@
+Feature,Meaning,Type,Missing Count,Missing %,Unique Values,Pearson w/ Target,Spearman w/ Target,Distribution Summary,EDA Note,Decision
+X4EVERDROP,Ever dropped out of high school,Binary target,0,0.0,2,,,0.0: 13297; 1.0: 1939,Target variable for dropout classification.,Target
+X2TXMTSCOR,Math standardized theta score,Continuous,0,0.0,14009,-0.213,-0.212,"mean=52.69, std=9.72, min=25.35, max=84.91",Strong academic performance signal and one of the most important candidate predictors.,Keep
+S2SUREDIPL,How sure student is they will receive diploma,Ordinal,0,0.0,4,0.216,0.203,1.0: 13896; 2.0: 1186; 3.0: 112,Very important graduation-confidence feature; strongly tied to dropout risk.,Keep
+X2REQLEVEL,Highest education level student believes they meet requirements for,Ordinal,0,0.0,6,-0.201,-0.179,4.0: 9762; 3.0: 2249; 5.0: 2064,Strong academic readiness / eligibility feature with clear modeling value.,Keep
+X2STUEDEXPCT,Student educational expectation,Ordinal,0,0.0,13,-0.169,-0.145,8.0: 4894; 10.0: 3268; 12.0: 2249,Strong educational expectation feature; canonical HSLS variable retained after S2EDUEXP was removed in Step 2.,Keep
+S2ALG1GRADE,Final Algebra I grade,Ordinal,0,0.0,7,0.15,0.119,1.0: 7170; 2.0: 4783; 3.0: 2405,"Meaningful academic performance feature; ordinal direction must be interpreted carefully (1=A, higher=worse).",Keep
+X2BEHAVEIN,School motivation / behavior,Continuous,0,0.0,464,-0.135,-0.118,"mean=0.13, std=0.86, min=-5.64, max=1.21",Behavior / motivation feature; may show nonlinear predictive value beyond its moderate linear correlation.,Keep
+X2POVERTY,Poverty indicator,Binary,0,0.0,2,0.111,0.111,0.0: 13081; 1.0: 2155,Socioeconomic risk indicator; important contextual predictor with confirmed amplification effect.,Keep
+X2PAREDEXPCT,Parent educational expectation,Ordinal,0,0.0,13,-0.123,-0.109,8.0: 5180; 10.0: 2924; 12.0: 2432,Parent educational expectation; useful contextual predictor that may complement student expectation.,Keep
+S2DOOKAY,Belief that people can do okay even if they drop out,Ordinal,0,0.0,4,-0.092,-0.087,3.0: 6636; 2.0: 4508; 4.0: 3648,Attitude toward dropout; likely useful as a supporting belief-based feature.,Keep
+S2PAYOFF,Belief that studying in high school pays off later,Ordinal,0,0.0,4,-0.076,-0.085,3.0: 7430; 4.0: 4297; 2.0: 2210,Attitude-based feature; may add supporting signal rather than being a dominant predictor alone.,Keep
+X2MTHEFF,Math self-efficacy,Continuous,0,0.0,167,-0.052,-0.042,"mean=0.09, std=0.96, min=-2.50, max=1.73",Continuous self-efficacy feature; likely useful but weaker than direct academic performance measures.,Keep
+X2SCIEFF,Science self-efficacy,Continuous,0,0.0,139,-0.033,-0.031,"mean=0.09, std=0.94, min=-2.47, max=1.64",Continuous science self-efficacy feature; conceptually valuable and may complement math self-efficacy.,Keep
+S2GRD1011,Grade level in 2010-2011,Ordinal,0,0.0,4,0.011,0.012,2.0: 14655; 3.0: 374; 1.0: 199,Earlier grade-level feature; useful for progression context but may be weaker than later academic indicators.,Keep
+S2GRD1112,Grade level in 2011-2012,Ordinal,0,0.0,4,-0.019,-0.01,3.0: 14701; 4.0: 361; 2.0: 161,Later grade-level feature; likely more directly related to dropout risk than prior grade status.,Keep
