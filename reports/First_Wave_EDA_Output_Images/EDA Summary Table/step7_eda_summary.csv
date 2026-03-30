@@ -1,0 +1,38 @@
+Feature,Type,Missing,Distribution,DR: group 0,DR: group 1,Gap,Spearman r,Signal,Multicollinearity,Key interaction,Missing handling
+X1MTHEFF,Continuous,0 (0.0%),"μ=0.07, σ=0.93, skew=-0.37",μ=0.11,μ=-0.19,-0.30,-0.111,Moderate,—,—,Fill NaN → 0; keep MATH_NO_CLASS flag
+X1SCIEFF,Continuous,0 (0.0%),"μ=0.06, σ=0.89, skew=-0.22",μ=0.10,μ=-0.16,-0.26,-0.097,Weak,—,—,Fill NaN → 0; keep SCI_NO_CLASS flag
+X1TXMTSCOR,Continuous,0 (0.0%),"μ=52.01, σ=10.01, skew=-0.06",μ=53.13,μ=45.88,-7.24,-0.26,Strong,r≈−0.44 with S1M8GRADE & S1S8GRADE,—,Complete — no action needed
+X1SCHOOLBEL,Continuous,0 (0.0%),"μ=0.10, σ=0.98, skew=-0.53",μ=0.17,μ=-0.28,-0.45,-0.156,Moderate,—,× S1M8GRADE: low belonging compounds poor grades (55% below-D),Complete — no action needed
+X1SCHOOLCLI,Continuous,0 (0.0%),"μ=-0.36, σ=0.94, skew=-0.53",μ=-0.31,μ=-0.62,-0.30,-0.11,Moderate,—,—,Complete — no action needed
+X1PAR_SURVEY_MISSING,Binary,0 (0.0%),"Yes=3,017 (19.0%)",13.3% (No),24.3% (Yes),+11.1pp,0.12,Moderate,—,—,Complete — no action needed
+X1_DUAL_PARENT,Binary,"3,017 (19.0%)","Yes=10,109 (63.6%)",22.1% (No),10.8% (Yes),-11.3pp,-0.136,Moderate,—,—,Within-group median imputation
+X1POVERTY,Binary,"3,017 (19.0%)","Yes=1,906 (12.0%)",10.6% (No),28.6% (Yes),+18.1pp,0.189,Moderate,r=−0.583 with X1FAMINCOME,× X1PAREDU & S1EDUEXPECT amplifier,Within-group median imputation
+MATH_NO_CLASS,Binary,0 (0.0%),"Yes=1,476 (9.3%)",14.7% (No),22.2% (Yes),+7.6pp,0.061,Weak,—,—,Complete — no action needed
+SCI_NO_CLASS,Binary,0 (0.0%),"Yes=2,526 (15.9%)",14.4% (No),20.5% (Yes),+6.2pp,0.062,Weak,—,—,Complete — no action needed
+X1CONTROL,Binary,0 (0.0%),"Yes=12,878 (81.0%)",nan% (No),17.8% (Yes),+nanpp,-0.142,Moderate,—,—,Complete — no action needed
+X2SEX,Binary,0 (0.0%),"Yes=7,733 (48.6%)",nan% (No),16.2% (Yes),+nanpp,-0.023,Weak,—,—,Complete — no action needed
+S1FYAA,Binary,0 (0.0%),"Yes=2,367 (14.9%)",15.0% (No),17.4% (Yes),+2.4pp,0.024,Weak,—,—,Complete — no action needed
+S1FYBA,Binary,0 (0.0%),"Yes=8,675 (54.6%)",22.4% (No),9.5% (Yes),-12.9pp,-0.178,Moderate,—,"Strongest protective S1FY* flag (r=−0.178, −12.9pp)",Complete — no action needed
+S1FYLICENSE,Binary,0 (0.0%),"Yes=1,898 (11.9%)",15.1% (No),17.1% (Yes),+2.0pp,0.018,Weak,—,—,Complete — no action needed
+S1FYAPPR,Binary,0 (0.0%),Yes=481 (3.0%),15.4% (No),14.6% (Yes),-0.8pp,-0.004,Weak,—,—,Complete — no action needed
+S1FYMILITARY,Binary,0 (0.0%),"Yes=1,209 (7.6%)",14.7% (No),23.2% (Yes),+8.5pp,0.063,Weak,—,Signal largely poverty-driven (above poverty: 15.8%),Complete — no action needed
+S1FYJOB,Binary,0 (0.0%),"Yes=6,388 (40.2%)",13.3% (No),18.5% (Yes),+5.2pp,0.071,Weak,—,—,Complete — no action needed
+S1FYFAMILY,Binary,0 (0.0%),Yes=958 (6.0%),14.7% (No),25.2% (Yes),+10.4pp,0.069,Weak,—,Signal largely poverty-driven (above poverty: 16.0%),Complete — no action needed
+S1FYTRAVEL,Binary,0 (0.0%),"Yes=1,875 (11.8%)",15.1% (No),17.3% (Yes),+2.2pp,0.02,Weak,—,—,Complete — no action needed
+S1FYVOLUN,Binary,0 (0.0%),"Yes=1,404 (8.8%)",15.8% (No),11.2% (Yes),-4.6pp,-0.036,Weak,—,—,Complete — no action needed
+S1FYNOTSURE,Binary,0 (0.0%),"Yes=2,187 (13.8%)",15.0% (No),17.7% (Yes),+2.7pp,0.026,Weak,—,—,Complete — no action needed
+S1M8GRADE,Ordinal,0 (0.0%),"range 1–6, median=2",8.2% (best cat),50.4% (worst cat),8.2%–50.4%,0.229,Strong,r=+0.530 with S1S8GRADE,× S1SUREHSGRAD: 7%–70% range,Complete — no action needed
+S1S8GRADE,Ordinal,0 (0.0%),"range 1–6, median=2",7.8% (best cat),51.1% (worst cat),7.8%–51.1%,0.242,Strong,r=+0.530 with S1M8GRADE,—,Complete — no action needed
+X1PAREDU,Ordinal,"3,017 (19.0%)","range 1–7, median=3",4.2% (best cat),32.4% (worst cat),4.2%–32.4%,-0.205,Strong,r=+0.597 with X1FAMINCOME,× X1POVERTY: 5.7%–36.6% range,Within-group median imputation
+X1PAREDEXPCT,Ordinal,"3,017 (19.0%)","range 1–11, median=8",5.2% (best cat),71.9% (worst cat),5.2%–71.9%,-0.111,Moderate,—,Independent of S1EDUEXPECT (r=+0.127); parent expectations dominate,Within-group median imputation
+X1FAMINCOME,Ordinal,"3,017 (19.0%)","range 1–13, median=4",3.6% (best cat),30.2% (worst cat),3.6%–30.2%,-0.223,Strong,r=+0.597 with X1PAREDU; r=−0.583 with X1POVERTY,Inverse SES gradient; poverty amplifies all levels,Within-group median imputation
+S1EDUEXPECT,Ordinal,0 (0.0%),"range 1–11, median=8",9.2% (best cat),54.0% (worst cat),9.2%–54.0%,-0.095,Weak,—,× X1POVERTY: 8.4%–44.0% range,Complete — no action needed
+S1SUREHSGRAD,Ordinal,0 (0.0%),"range 1–4, median=1",12.1% (best cat),58.4% (worst cat),12.1%–58.4%,0.228,Strong,—,× S1M8GRADE: 7%–70% range,Complete — no action needed
+S1PAYOFF,Ordinal,0 (0.0%),"range 1–4, median=3",10.3% (best cat),26.0% (worst cat),10.3%–26.0%,-0.133,Moderate,r≈0.41–0.46 with attitude cluster,—,Complete — no action needed
+S1GETINTOCLG,Ordinal,0 (0.0%),"range 1–4, median=3",11.2% (best cat),36.0% (worst cat),11.2%–36.0%,-0.122,Moderate,r≈0.45–0.48 with attitude cluster,—,Complete — no action needed
+S1AFFORD,Ordinal,0 (0.0%),"range 1–4, median=3",10.2% (best cat),33.1% (worst cat),10.2%–33.1%,-0.151,Moderate,r≈0.41–0.45 with attitude cluster,—,Complete — no action needed
+S1WORKING,Ordinal,0 (0.0%),"range 1–4, median=3",10.7% (best cat),34.6% (worst cat),10.7%–34.6%,-0.153,Moderate,r≈0.41–0.48 with attitude cluster,—,Complete — no action needed
+S1PLAN,Ordinal,0 (0.0%),"range 1–4, median=3",10.3% (best cat),22.6% (worst cat),10.3%–22.6%,0.014,Weak,—,× S1EDUEXPECT: no plan only risky for low-expectation students,Complete — no action needed
+X1RACE,Categorical,0 (0.0%),8 categories,8.0% (lowest cat),31.6% (highest cat),8.0%–31.6%,N/A,Moderate,—,× X1POVERTY: Am. Indian +39pp under poverty,Complete — no action needed
+X1LOCALE,Categorical,0 (0.0%),4 categories,14.3% (lowest cat),17.2% (highest cat),14.3%–17.2%,N/A,Weak,—,—,Complete — no action needed
+X1REGION,Categorical,0 (0.0%),4 categories,11.9% (lowest cat),19.5% (highest cat),11.9%–19.5%,N/A,Weak,—,—,Complete — no action needed
