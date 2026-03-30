@@ -1,17 +1,20 @@
 # Notebooks
 
-Naming convention: `NN_topic_owner.ipynb`
+This folder contains the main project workflow notebooks, organized by stage.
 
-Order suggestion:
-- 01 EDA
-- 02 Cleaning
-- 03 Baseline model
-- 04 Feature engineering
-- 05 Final model + evaluation
+## Folder Structure
 
-Make your notebooks easy to read:
-- Add short section headers
-- Explain decisions in 1 to 3 sentences
-- Keep outputs that support your story
-- Remove noisy prints
-- Keep code runnable top to bottom
+### 0 - Initial Column Selection
+Contains the notebook used to inspect the original dataset, remove unnecessary columns, and define the initial set of features for the project.
+
+### 1 - Cleaning
+Contains the data cleaning work, including handling missing values, removing invalid or unnecessary columns, and preparing the data for analysis and modeling.
+
+### 2 - EDA
+Contains exploratory data analysis notebooks used to understand the dataset, inspect distributions, check relationships between variables, and identify issues or patterns that may affect modeling.
+
+### 3 - Preparing For Modeling
+Contains the steps needed before training models, such as encoding, scaling decisions, feature setup, and other preprocessing required for machine learning.
+
+### 4 - Modeling
+Contains the baseline and final modeling notebooks, including training, evaluation, threshold tuning, and comparison between models.
