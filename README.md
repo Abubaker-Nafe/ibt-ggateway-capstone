@@ -118,7 +118,3 @@ For deployment contexts where counselor capacity is limited, raising the thresho
    - Key packages: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `lightgbm`, `shap`, `matplotlib`, `seaborn`
    - Install with: `pip install pandas numpy scikit-learn xgboost lightgbm shap matplotlib seaborn`
 5. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only.
-
-## 10) Contributing
-
-See `CONTRIBUTING.md`.
