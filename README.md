@@ -111,10 +111,12 @@ For deployment contexts where counselor capacity is limited, raising the thresho
 ## 9) How to Reproduce
 
 1. **Obtain the data:** Download the HSLS:09 public-use file from the [NCES DataLab](https://nces.ed.gov/datalab/onlinecodebook/session/codebook/4d7df048-94e7-4d1f-94da-9073be961786).
-2. **Run the EDA notebook** in `notebooks/` to explore and preprocess the data.
-3. **Run the modeling notebook** (`Final_Modeling.ipynb`) in `notebooks/` — it handles train/test splitting, scaling, model training, tuning, calibration, and evaluation.
-4. **Environment:**
+2. **Run the Cleaning notebook** in `notebooks/` to initially clean and process the raw data.
+3. **Run the EDA notebook** in `notebooks/` to explore and preprocess the data.
+4. **Run the Preparing for Modeling notebook** in `notebooks/` to prepare features and structure the data for modeling.
+5. **Run the modeling notebook** (`Final_Modeling.ipynb`) in `notebooks/` — it handles train/test splitting, scaling, model training, tuning, calibration, and evaluation.
+6. **Environment:**
    - Python 3.8+
    - Key packages: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `lightgbm`, `shap`, `matplotlib`, `seaborn`
    - Install with: `pip install pandas numpy scikit-learn xgboost lightgbm shap matplotlib seaborn`
-5. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only.
+7. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only.
