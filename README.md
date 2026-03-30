@@ -33,14 +33,6 @@
 | `Baseline_Dataset50.csv` | 50 features from **9th-grade (base-year)** data only | 50 |
 | `Wave1_FeatureSelected.csv` | Feature-selected and engineered columns from the enhanced dataset | Selected subset |
 
-### Pre-processing
-
-- Categorical features were one-hot encoded
-- Missing values were handled using principled imputation strategies
-- HSLS:09 reserve codes (−5, −6, −7, −8, −9) were treated appropriately (suppressed variables removed, others treated as missing)
-- `StandardScaler` applied to features inside the modeling notebook
-- 80/20 stratified train/test split to preserve the class ratio
-
 ## 4) Repository Structure
 
 ```
@@ -125,7 +117,7 @@ For deployment contexts where counselor capacity is limited, raising the thresho
    - Python 3.8+
    - Key packages: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `lightgbm`, `shap`, `matplotlib`, `seaborn`
    - Install with: `pip install pandas numpy scikit-learn xgboost lightgbm shap matplotlib seaborn`
-5. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only. No test data was used during training, threshold selection, or feature engineering.
+5. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only.
 
 ## 10) Contributing
 
