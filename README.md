@@ -5,7 +5,7 @@
 
 **Track:** Supervised  
 
-**Primary Metric:** F1-score
+**Primary Metric:** Recall
 
 ## 2) Team
 - Nafe Abubaker    (Role: Project Coordinator, Data Lead, EDA Lead, Github Lead)
