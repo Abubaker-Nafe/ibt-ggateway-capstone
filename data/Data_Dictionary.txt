@@ -1,0 +1,997 @@
+2017 High School Longitudinal Study of 2009 Online Codebook Extract Codebook
+
+C:\OnlineCodebook\HSLS\Codebook.txt
+
+/*****************************************************************************************
+NOTES:                                                                                  
+   (1) Full sample weights and/or replicate weights are added automatically.
+   (2) Identification numbers are added automatically.
+*****************************************************************************************/
+
+
+File:       STUDENT
+Name:       X1RACE
+Position:   392
+Length:     2
+Label:      X1 Student's race/ethnicity-composite
+
+Description:
+X1RACE characterizes the sample member's race/ethnicity by summarizing the following six dichotomous race/ethnicity composites: X1HISPANIC, X1WHITE, X1BLACK, X1ASIAN, X1PACISLE, and X1AMINDIAN. The dichotomous race/ethnicity composites are based on data from the student questionnaire, if available; if not available from the student questionnaire, they are based on, in order of preference, data from the school-provided sampling roster or data from the parent questionnaire. X1RACE is derived from the six dichotomous race/ethnicity variables listed above (though the imputed values of X1WHITE, X1BLACK, X1ASIAN, X1PACISLE, and X1AMINDIAN are not stored on the data file). If  any of these input variables are imputed, then the imputation flag for X1RACE (X1RACE _IM) is set to 1.
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Amer. Indian/Alaska Native, non-Hispanic                  165                0.70 
+2                   Asian, non-Hispanic                                     1,952                8.31 
+3                   Black/African-American, non-Hispanic                    2,450               10.42 
+4                   Hispanic, no race specified                               422                1.80 
+5                   Hispanic, race specified                                3,375               14.36 
+6                   More than one race, non-Hispanic                        1,941                8.26 
+7                   Native Hawaiian/Pacific Islander, non-Hi                  110                0.47 
+                    spanic
+8                   White, non-Hispanic                                    12,082               51.41 
+-9                  Missing                                                 1,006                4.28 
+TOTAL                                                                      23,503              100.01
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1TXMTSCOR
+Position:   441
+Length:     7
+Label:      X1 Mathematics standardized theta score
+
+Description:
+The math standardized T score provides a norm-referenced measurement of achievement, that is, an estimate of achievement relative to the population (fall 2009 9th graders) as a whole. It provides information on status compared to peers  (as distinguished from the IRT-estimated percent-correct score which represents status with respect to achievement on a particular criterion set of test items). The standardized T score is a transformation of the IRT theta (ability) estimate, rescaled to a mean of 50 and standard deviation of 10. An advantage of the standardized score over the raw theta score is that it facilitates comparisons in standard deviation units. See Chapter 2 of the HSLS:09 Base-Year Data File Documentation (NCES 2011-328) for more information on the derivation of the math T score.
+
+
+                                                                           Mean       Std Deviation 
+Category                            Min                 Max          Unweighted          Unweighted 
+------------------- ------------------- ------------------- ------------------- ------------------- 
+Continuous                      -8.0000             82.1876             45.9312             19.2860
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1PAREDU
+Position:   529
+Length:     2
+Label:      X1 Parents'/guardians' highest level of education
+
+Description:
+Indicates the highest level of education achieved by either parent living in the sample member's home.  X1PAREDU is constructed from two composite variables (X1PAR1EDU and X1PAR2EDU) which contain imputed values; if either of these two input variables are imputed and the highest level of education could not be inferred from non-imputed data, then the imputation flag for X1PAREDU (X1PAREDU_IM) is set to 1.
+
+
+"Educational Specialist diploma" recoded as "Master's degree" on the public use file.
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Less than high school                                   1,010                4.30 
+2                   High school diploma or GED                              5,909               25.14 
+3                   Associate's degree                                      2,549               10.85 
+4                   Bachelor's degree                                       4,102               17.45 
+5                   Master's degree                                         2,116                9.00 
+7                   Ph.D/M.D/Law/other high lvl prof degree                 1,096                4.66 
+-9                  Missing                                                     6                0.03 
+-8                  Unit non-response                                       6,715               28.57 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1FAMINCOME
+Position:   579
+Length:     2
+Label:      X1 Total family income from all sources 2008
+
+Description:
+X1FAMINCOME is a categorical variable which indicates the sample member's family income from all sources in 2008, as reported by the parent questionnaire respondent.  If missing from the parent questionnaire, X1FAMINCOME is statistically imputed (imputed values in X1FAMINCOME can be identified by using X1FAMINC_IM).
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Family income less than or equal to $15,                1,570                6.68 
+                    000
+2                   Family income > $15,000 and <= $35,000                  3,043               12.95 
+3                   Family income > $35,000 and <= $55,000                  2,762               11.75 
+4                   Family income > $55,000 and <= $75,000                  2,514               10.70 
+5                   Family income > $75,000 and <= $95,000                  1,855                7.89 
+6                   Family income > $95,000 and <= $115,000                 1,484                6.31 
+7                   Family income > $115,000 and <= $135,000                  964                4.10 
+8                   Family income > $135,000 and <= $155,000                  741                3.15 
+9                   Family income > $155,000 and <=$175,000                   367                1.56 
+10                  Family income > $175,000 and <= $195,000                  237                1.01 
+11                  Family income > $195,000 and <= $215,000                  316                1.34 
+12                  Family income > $215,000 and <= $235,000                  116                0.49 
+13                  Family income > $235,000                                  792                3.37 
+-9                  Missing                                                    27                0.11 
+-8                  Unit non-response                                       6,715               28.57 
+TOTAL                                                                      23,503               99.98
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1POVERTY
+Position:   581
+Length:     2
+Label:      X1 Poverty indicator (relative to 100% of Census poverty threshold)
+
+Description:
+X1POVERTY indicates whether the sample member's family was at/above or below the 2008 poverty threshold, as set forth by the U.S. Census Bureau.  Both family income and household size are considered when calculating whether a family is at/above or below the poverty threshold.  If X1FAMINCOME or X1HHNUMBER are imputed, then the imputation flag for the poverty variables (X1POVERTY_IM) is set to 1. See https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-thresholds.html for further detail on 2008 poverty thresholds.
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   At or above poverty threshold                          14,062               59.83 
+1                   Below poverty threshold                                 2,671               11.36 
+-9                  Missing                                                    55                0.23 
+-8                  Unit non-response                                       6,715               28.57 
+TOTAL                                                                      23,503               99.99
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1MTHEFF
+Position:   615
+Length:     5
+Label:      X1 Scale of student's mathematics self-efficacy
+
+Description:
+This variable is a scale of the sample member's math self-efficacy; higher X1MTHEFF values represent higher math self-efficacy.  Variable was created through principal components factor analysis (weighted by W1STUDENT) and standardized to a mean of 0 and standard deviation of 1. The inputs to this scale were S1MTESTS, S1MTEXTBOOK, S1MSKILLS, and S1MASSEXCL. Only respondents who provided a full set of responses were assigned a scale value. If the student indicated that he or she was not taking a fall math class, this variable is set to -7. The coefficient of reliability (alpha) for the scale is .65 or higher. For more information on this scale score, please see chapter 5 of the Base-Year Data File Documentation (NCES 2011-328).
+
+                                                                           Mean       Std Deviation 
+Category                            Min                 Max          Unweighted          Unweighted 
+------------------- ------------------- ------------------- ------------------- ------------------- 
+Continuous                        -9.00                1.62               -1.52                3.24
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1SCIEFF
+Position:   635
+Length:     5
+Label:      X1 Scale of student's science self-efficacy
+
+Description:
+This variable is a scale of the sample member's science self-efficacy; higher X1SCIEFF values represent higher science self-efficacy.  Variable was created through principal components factor analysis (weighted by W1STUDENT) and standardized to a mean of 0 and standard deviation of 1. The inputs to this scale were S1STESTS, S1STEXTBOOK, S1SSKILLS, and S1SASSEXCL. Only respondents who provided a full set of responses were assigned a scale value. If the student indicated that he or she was not taking a fall science class, this variable is set to -7.  The coefficient of reliability (alpha) for the scale is .65 or higher. For more information on this scale score, please see chapter 5 of the Base-Year Data File Documentation (NCES 2011-328).
+
+                                                                           Mean       Std Deviation 
+Category                            Min                 Max          Unweighted          Unweighted 
+------------------- ------------------- ------------------- ------------------- ------------------- 
+Continuous                        -9.00                1.83               -1.97                3.46
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1SCHOOLBEL
+Position:   645
+Length:     5
+Label:      X1 Scale of student's sense of school belonging
+
+Description:
+This variable is a scale of the sample member's perception of school belonging; higher values represent a greater sense of school belonging.  Variable was created through principal components factor analysis (weighted by W1STUDENT) and standardized to a mean of 0 and standard deviation of 1. The inputs to this scale were S1SAFE, S1PROUD, S1TALKPROB, S1SCHWASTE, and S1GOODGRADES. Only respondents who provided a full set of responses were assigned a scale value. The coefficient of reliability (alpha) for the scale is .65 or higher. For more information on this scale score, please see chapter 5 of the Base-Year Data File Documentation (NCES 2011-328).
+
+                                                                           Mean       Std Deviation 
+Category                            Min                 Max          Unweighted          Unweighted 
+------------------- ------------------- ------------------- ------------------- ------------------- 
+Continuous                        -9.00                1.59               -0.93                2.88
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1PAREDEXPCT
+Position:   669
+Length:     2
+Label:      X1 How far in school parent thinks 9th grader will go
+
+Description:
+X1PAREDEXPCT indicates the highest level of education the parent questionnaire respondent expects the sample member to achieve.  X1PAREDEXPCT is taken from the base year parent questionnaire; if missing from the base year parent questionnaire, X1PAREDEXPCT is statistically imputed (imputed values in X1PAREDEXPCT can be identified using X1PAREDEX_IM).
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Less than high school                                      55                0.23 
+2                   High school diploma or GED                              1,293                5.50 
+3                   Start an Associate's degree                               149                0.63 
+4                   Complete an Associate's degree                          1,199                5.10 
+5                   Start a Bachelor's degree                                 133                0.57 
+6                   Complete a Bachelor's degree                            4,952               21.07 
+7                   Start a Master's degree                                    76                0.32 
+8                   Complete a Master's degree                              3,355               14.27 
+9                   Start Ph.D/M.D/Law/other prof degree                       37                0.16 
+10                  Complete Ph.D/M.D/Law/other prof degree                 3,782               16.09 
+11                  Don't know                                              1,725                7.34 
+-9                  Missing                                                    32                0.14 
+-8                  Unit non-response                                       6,715               28.57 
+TOTAL                                                                      23,503               99.99
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1CONTROL
+Position:   795
+Length:     2
+Label:      X1 School control
+
+Description:
+X1CONTROL identifies the sample member's base year school as being a Public, Catholic, or Other Private School, as indicated in the source data for sampling: the Common Core of Data (CCD) 2005-2006 and the Private School Survey (PSS) 2005-2006.
+Please note: CCD/PSS variables from the version used to draw the sample are provided, and not a version consistent with the base year data collection timeframe.  Analysts can use X1NCESID to merge to any version of CCD or PSS to obtain information for a particular timeframe.
+
+Catholic and other private recoded as one category on the public use file.
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Public                                                 19,273               82.00 
+2                   Catholic or other private                               4,230               18.00 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1LOCALE
+Position:   797
+Length:     2
+Label:      X1 School locale (urbanicity)
+
+Description:
+X1LOCALE characterizes the locale (urbanicity) of the sample member's base year school as either City, Suburb, Town, or Rural, as indicated in the source data for sampling: the Common Core of Data (CCD) 2005-2006 and the Private School Survey (PSS) 2005-2006.
+Please note: CCD/PSS variables from the version used to draw the sample are provided, and not a version consistent with the base year data collection timeframe.  Analysts can use X1NCESID to merge to any version of CCD or PSS to obtain information for a particular timeframe.
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   City                                                    6,689               28.46 
+2                   Suburb                                                  8,467               36.03 
+3                   Town                                                    2,788               11.86 
+4                   Rural                                                   5,559               23.65 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1REGION
+Position:   799
+Length:     2
+Label:      X1 School geographic region
+
+Description:
+X1REGION identifies the geographic region of the sample member's base year school, as indicated in the source data for sampling: the Common Core of Data (CCD) 2005-2006 and the Private School Survey (PSS) 2005-2006.
+Please note: CCD/PSS variables from the version used to draw the sample are provided, and not a version consistent with the base year data collection timeframe.  Analysts can use X1NCESID to merge to any version of CCD or PSS to obtain information for a particular timeframe.
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Northeast                                               3,662               15.58 
+2                   Midwest                                                 6,224               26.48 
+3                   South                                                   9,587               40.79 
+4                   West                                                    4,030               17.15 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1SCHOOLCLI
+Position:   823
+Length:     5
+Label:      X1 Scale of administrator's assessment of school climate
+
+Description:
+This variable is a scale of the administrator's assessment of his/her school's climate.  Higher values represent more positive assessments of the school's climate (i.e. fewer problems are indicated). Variable was created through principal components factor analysis (weighted by W1SCHOOL) and standardized to a mean of 0 and standard deviation of 1. The inputs to this scale were A1CONFLICT, A1ROBBERY, A1VANDALISM, A1DRUGUSE, A1ALCOHOL, A1DRUGSALE, A1WEAPONS, A1PHYSABUSE, A1TENSION, A1BULLY, A1VERBAL, A1MISBEHAVE, A1DISRESPECT, and A1GANG. Only respondents who provided a full set of responses were assigned a scale value. The coefficient of reliability (alpha) for the scale is .65 or higher. For more information, please see chapter 5 of the HSLS:09 Base-Year Data File Documentation (NCES 2011-328).
+
+                                                                           Mean       Std Deviation 
+Category                            Min                 Max          Unweighted          Unweighted 
+------------------- ------------------- ------------------- ------------------- ------------------- 
+Continuous                        -9.00                1.97               -2.13                3.53
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X2SEX
+Position:   869
+Length:     2
+Label:      X2 Student's sex
+
+Description:
+X2SEX is the sample member's sex.  The composite is based on data from the BY student questionnaire, parent questionnaire, and/or school-provided sampling roster, and then updated when missing with data from the F1 student questionnaire.
+
+
+SAS Logic:
+if x1sex>0 and x1sex_im=0 then x2sex=x1sex;
+else if s2sex in (1,2) then x2sex=s2sex;
+else if p2sexteen in (1,2) then x2sex=P2SEXTEEN;
+if x2sex<1 and x1sex>0 and x1sex_im=1 then do;
+   x2sex=x1sex;
+   x2sex_im=1;
+end;
+else if x2sex>0 then x2sex_im=0;
+else if x2sqstat<7 or x2pqstat<7 then do;
+   x2sex=-9;
+   x2sex_im=-9;
+end;
+else do;
+   x2sex=-9;
+   x2sex_im=0;
+end;
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Male                                                   11,975               50.95 
+2                   Female                                                 11,528               49.05 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X4EVERDROP
+Position:   2266
+Length:     2
+Label:      X4 Ever dropped out of high school
+
+Description:
+This variable indicates if the respondent ever dropped out of high school.
+This variable updates the prior version X3EVERDROP using the HSLS:09 second follow-up interview item S4DROPOUTHS.
+
+Note: corresponding variable X3EVERDROP included imputed values and those values were carried over to X4EVERDROP.
+Applies to: All second follow-up respondents.
+
+SAS Logic:
+if X3EVERDROP=1 or S4DROPOUTHS = 1 then X4EVERDROP = 1;
+else if X3EVERDROP = -9 or S4DROPOUTHS = -9 then X4EVERDROP = -9;
+else X4EVERDROP = 0;
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     14,618               62.20 
+1                   Yes                                                     2,714               11.55 
+-9                  Missing                                                     3                0.01 
+-8                  Unit non-response                                       6,168               26.24 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1M8GRADE
+Position:   3735
+Length:     2
+Label:      S1 B07 Final grade in 9th grader's most advanced 8th grade math course
+
+Description:
+What was your final grade in this math course? 
+(If your school uses numerical grades only, please answer in terms of the letter equivalent. If you don't know the equivalent, assume that...
+90 to 100 is an "A", 80 to 89 is a "B", 70 to 79 is a "C", 60 to 69 is a "D", and anything less than 60 is "below D")
+  A
+  B
+  C
+  D
+  Below D
+  Your class was not graded
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   A                                                       7,732               32.90 
+2                   B                                                       7,815               33.25 
+3                   C                                                       3,678               15.65 
+4                   D                                                       1,029                4.38 
+5                   Below D                                                   570                2.43 
+6                   Class was not graded                                      168                0.71 
+-9                  Missing                                                   327                1.39 
+-8                  Unit non-response                                       2,059                8.76 
+-7                  Item legitimate skip/NA                                   125                0.53 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1S8GRADE
+Position:   3739
+Length:     2
+Label:      S1 B09 Final grade in 9th grader's most advanced 8th grade science course
+
+Description:
+What was your final grade in this science course?
+(If your school uses numerical grades only, please answer in terms of the letter equivalent. If you don't know the equivalent, assume that...
+90 to 100 is an "A", 80 to 89 is a "B", 70 to 79 is a "C", 60 to 69 is a "D", and anything less than 60 is "below D")
+  A
+  B
+  C
+  D
+  Below D
+  Your class was not graded
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   A                                                       8,465               36.02 
+2                   B                                                       7,382               31.41 
+3                   C                                                       3,489               14.84 
+4                   D                                                         836                3.56 
+5                   Below D                                                   368                1.57 
+6                   Class was not graded                                      186                0.79 
+-9                  Missing                                                   593                2.52 
+-8                  Unit non-response                                       2,059                8.76 
+-7                  Item legitimate skip/NA                                   125                0.53 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1PAYOFF
+Position:   3969
+Length:     2
+Label:      S1 E05A 9th grader thinks studying in school rarely pays off later with good job
+
+Description:
+How much do you agree or disagree with the following statements?
+Studying in school rarely pays off later with good jobs
+  Strongly agree
+  Agree
+  Disagree
+  Strongly disagree
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Strongly agree                                          1,824                7.76 
+2                   Agree                                                   3,280               13.96 
+3                   Disagree                                                8,681               36.94 
+4                   Strongly disagree                                       7,233               30.77 
+-9                  Missing                                                   426                1.81 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1GETINTOCLG
+Position:   3971
+Length:     2
+Label:      S1 E05B 9th grader thinks even if he/she studies he/she won't get into college
+
+Description:
+How much do you agree or disagree with the following statements?
+Even if you study, you will not be able to get into college
+  Strongly agree
+  Agree
+  Disagree
+  Strongly disagree
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Strongly agree                                            391                1.66 
+2                   Agree                                                   1,481                6.30 
+3                   Disagree                                               10,523               44.77 
+4                   Strongly disagree                                       8,586               36.53 
+-9                  Missing                                                   463                1.97 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503               99.99
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1AFFORD
+Position:   3973
+Length:     2
+Label:      S1 E05C 9th grader thinks even if he/she studies family can't afford college
+
+Description:
+How much do you agree or disagree with the following statements?
+Even if you study, your family cannot afford to pay for you to attend college
+  Strongly agree
+  Agree
+  Disagree
+  Strongly disagree
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Strongly agree                                            956                4.07 
+2                   Agree                                                   3,974               16.91 
+3                   Disagree                                               10,641               45.28 
+4                   Strongly disagree                                       5,339               22.72 
+-9                  Missing                                                   534                2.27 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.01
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1WORKING
+Position:   3975
+Length:     2
+Label:      S1 E05D 9th grader thinks working is more important for him/her than college
+
+Description:
+How much do you agree or disagree with the following statements?
+Working is more important for you than attending college
+  Strongly agree
+  Agree
+  Disagree
+  Strongly disagree
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Strongly agree                                            765                3.25 
+2                   Agree                                                   2,068                8.80 
+3                   Disagree                                               10,715               45.59 
+4                   Strongly disagree                                       7,298               31.05 
+-9                  Missing                                                   598                2.54 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503               99.99
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1SUREHSGRAD
+Position:   4187
+Length:     2
+Label:      S1 F10 How sure 9th grader is that he/she will graduate from high school
+
+Description:
+How sure are you that you will graduate from high school?
+  Very sure you'll graduate
+  You'll probably graduate
+  You probably won't graduate
+  Very sure you won't graduate
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Very sure about graduating                             17,686               75.25 
+2                   Will probably graduate                                  2,844               12.10 
+3                   Will probably not graduate                                257                1.09 
+4                   Very sure about not graduating                             96                0.41 
+-9                  Missing                                                   561                2.39 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1EDUEXPECT
+Position:   4189
+Length:     2
+Label:      S1 G01 How far in school 9th grader thinks he/she will get
+
+Description:
+As things stand now, how far in school do you think you will get?
+  Less than high school
+  High school graduation or GED
+  Start but not complete an Associate's degree from a community college or technical institute
+  Complete an Associate's degree from a community college or technical institute
+  Start but not complete a Bachelor's degree
+  Complete a Bachelor's degree
+  Start but not complete a Master's degree or equivalent
+  Complete a Master's degree or equivalent
+  Start but not complete a Ph.D., M.D., law degree, or other high level professional degree
+  Complete a Ph.D., M.D., law degree, or other high level professional degree
+  Don't know
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+1                   Less than high school                                      92                0.39 
+2                   High school diploma or GED                              2,572               10.94 
+3                   Start an Associate's degree                               139                0.59 
+4                   Complete an Associate's degree                          1,174                5.00 
+5                   Start a Bachelor's degree                                 113                0.48 
+6                   Complete a Bachelor's degree                            3,469               14.76 
+7                   Start a Master's degree                                   226                0.96 
+8                   Complete a Master's degree                              4,214               17.93 
+9                   Start Ph.D/M.D/Law/other prof degree                      172                0.73 
+10                  Complete Ph.D/M.D/Law/other prof degree                 4,396               18.70 
+11                  Don't know                                              4,569               19.44 
+-9                  Missing                                                   308                1.31 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503               99.99
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYAA
+Position:   4197
+Length:     2
+Label:      S1 G05A 9th grader plans to enroll in Associate's program in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     17,829               75.86 
+1                   Yes                                                     3,192               13.58 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYBA
+Position:   4199
+Length:     2
+Label:      S1 G05B 9th grader plans to enroll in Bachelor's program in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                      9,886               42.06 
+1                   Yes                                                    11,135               47.38 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYLICENSE
+Position:   4201
+Length:     2
+Label:      S1 G05C 9th grader plans to obtain license or certificate in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     18,490               78.67 
+1                   Yes                                                     2,531               10.77 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYAPPR
+Position:   4203
+Length:     2
+Label:      S1 G05D 9th grader plans to attend apprenticeship program in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     20,385               86.73 
+1                   Yes                                                       636                2.71 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYMILITARY
+Position:   4205
+Length:     2
+Label:      S1 G05E 9th grader plans to join the armed services in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     19,301               82.12 
+1                   Yes                                                     1,720                7.32 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYJOB
+Position:   4207
+Length:     2
+Label:      S1 G05F 9th grader plans to get a job in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     12,419               52.84 
+1                   Yes                                                     8,602               36.60 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYFAMILY
+Position:   4209
+Length:     2
+Label:      S1 G05G 9th grader plans to start a family in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     19,663               83.66 
+1                   Yes                                                     1,358                5.78 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYTRAVEL
+Position:   4211
+Length:     2
+Label:      S1 G05H 9th grader plans to travel in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     18,551               78.93 
+1                   Yes                                                     2,470               10.51 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYVOLUN
+Position:   4213
+Length:     2
+Label:      S1 G05I 9th grader plans to volunteer or do missionary work in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     19,229               81.82 
+1                   Yes                                                     1,792                7.62 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       S1FYNOTSURE
+Position:   4215
+Length:     2
+Label:      S1 G05J 9th grader does not know what he/she will do in 1st year after HS
+
+Description:
+What do you plan to do during your first year after high school?
+(Check all that apply.)
+  Enroll in an Associate's degree program in a two-year community college or technical institute
+  Enroll in a Bachelor's degree program in a college or university
+  Obtain a license or certificate in a career field
+  Attend a registered apprenticeship program
+  Join the armed services
+  Get a job
+  Start a family
+  Travel
+  Do volunteer or missionary work
+  Not sure what you want to do
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   No                                                     18,323               77.96 
+1                   Yes                                                     2,698               11.48 
+-9                  Missing                                                   423                1.80 
+-8                  Unit non-response                                       2,059                8.76 
+TOTAL                                                                      23,503              100.00
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1PAR_SURVEY_MISSING
+Position:   N/A
+Length:     1
+Label:      Whether or not the parents participated in the survey
+
+Description:
+Engineered feature. A flag for -8 (Unit Non-Response) missing values indicating whether the parent/guardian participated in the parent survey. This variable captures missingness that is not at random (MNAR).
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   Did participate                                           N/A              N/A 
+1                   Did not participate                                       N/A              N/A 
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       X1_DUAL_PARENT
+Position:   N/A
+Length:     1
+Label:      Whether student had one or two parents/guardians
+
+Description:
+Engineered feature. Indicates whether the student had one or two parents/guardians in the household.
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   One Parent/Guardian                                       N/A              N/A 
+1                   Two Parents/Guardians                                     N/A              N/A 
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       MATH_NO_CLASS
+Position:   N/A
+Length:     1
+Label:      Student did not take math class in 8th grade
+
+Description:
+Engineered feature. Indicates whether the student did not take a math class in 8th grade.
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   Student took math class                                   N/A              N/A 
+1                   Student did not take math class                           N/A              N/A 
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+File:       STUDENT
+Name:       SCI_NO_CLASS
+Position:   N/A
+Length:     1
+Label:      Student did not take science class in 8th grade
+
+Description:
+Engineered feature. Indicates whether the student did not take a science class in 8th grade.
+
+
+                                                                        Frequency             Percent 
+Category            Label                                              Unweighted          Unweighted 
+------------------- ----------------------------------------- ------------------- ------------------- 
+0                   Student took science class                                N/A              N/A 
+1                   Student did not take science class                        N/A              N/A 
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
