@@ -73,10 +73,11 @@
 
 | Model | ROC-AUC | F1 | Recall |
 |---|---:|---:|---:|
-| Baseline — LR | 0.7907 ± 0.011 | 0.2601 ± 0.010 | 0.1663 ± 0.007 |
-| Enhanced — LR | 0.7883 ± 0.009 | 0.4404 ± 0.005 | 0.7175 ± 0.010 |
-| Enhanced — XGB | 0.7780 ± 0.012 | 0.4439 ± 0.019 | 0.6100 ± 0.029 |
-| Tuned XGB | 0.7908 ± 0.011 | 0.4444 ± 0.016 | 0.7185 ± 0.026 |
+| Baseline Logistic Regression | 0.7835 | 0.2190 | 0.1370 |
+| Baseline XGBoost (t=0.30) | 0.7759 | 0.4355 | 0.4315 |
+| Baseline XGB + weights | 0.7666 | 0.4542 | 0.6237 |
+| Enhanced XGBoost (t=0.30) | 0.7687 | 0.3968 | 0.8160 |
+| Tuned XGBoost (t=0.30) | 0.7809 | 0.3733 | 0.8650 |
 
 ### Recommended Model
 
