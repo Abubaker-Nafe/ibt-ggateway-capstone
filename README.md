@@ -65,19 +65,8 @@
 | 7 | Enhanced — XGBoost | 0.30 | 0.8160 | 0.3968 | 0.7687 | 0.2622 |
 | 8 | Tuned XGBoost | 0.50 | 0.7137 | 0.4512 | 0.7809 | 0.3299 |
 | **9** | **Tuned XGBoost** | **0.30** | **0.8650** | **0.3733** | **0.7809** | **0.2380** |
-| 10 | Calibrated XGBoost | 0.30 | 0.4867 | 0.4626 | 0.7816 | 0.4407 |
 
 > The full comparison table (17 model configurations) is available in the modeling notebook.
-
-### Cross-Validation Results (5-Fold Stratified)
-
-| Model | ROC-AUC | F1 | Recall |
-|---|---:|---:|---:|
-| Baseline Logistic Regression | 0.7835 | 0.2190 | 0.1370 |
-| Baseline XGBoost (t=0.30) | 0.7759 | 0.4355 | 0.4315 |
-| Baseline XGB + weights | 0.7666 | 0.4542 | 0.6237 |
-| Enhanced XGBoost (t=0.30) | 0.7687 | 0.3968 | 0.8160 |
-| Tuned XGBoost (t=0.30) | 0.7809 | 0.3733 | 0.8650 |
 
 ### Recommended Model
 
