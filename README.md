@@ -7,6 +7,8 @@
 **Track:** Supervised  
 **Primary Metric:** Recall — because missing an at-risk student (false negative) is more costly than a false alarm (false positive) in an early-intervention setting.
 
+---
+
 ## 2) Team
 
 | Name | Primary Roles | Secondary Roles |
@@ -16,6 +18,8 @@
 | Ayham AlDuwairi | Modeling Lead, Documentation Lead | GitHub Lead |
 | Afaf Amwas | Project Coordinator, Data Lead | EDA and Visuals Lead |
 | Heba Qasim | Data Cleaning Lead | Documentation Lead |
+
+---
 
 ## 3) Dataset
 
@@ -33,22 +37,30 @@
 | `Baseline_Dataset50.csv` | 50 features from **9th-grade (base-year)** data only | 50 |
 | `Wave1_FeatureSelected.csv` | Feature-selected and engineered columns from the enhanced dataset | Selected subset |
 
+---
+
 ## 4) Repository Structure
 
-```
-├── notebooks/          ← Colab notebooks (EDA, modeling, etc..)
-├── data/               ← Dataset
-├── reports/            ← Figures, charts, exported results
-├── slide-deck/         ← Final presentation
-├── project-proposal/   ← Initial Project Proposal
+```text
+├── data/               ← Processed datasets and dataset access notes
+├── notebooks/          ← Main workflow notebooks
+├── project-proposal/   ← Initial proposal and planning documents
+├── reports/            ← Figures, charts, and exported results
+├── slide-deck/         ← Final presentation materials
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
-## 5) Project Plan (Week-wise)
+---
 
-- **Week 7:** Proposal + dataset finalization + repo setup
-- **Weeks 8–11:** EDA → baseline → improvements → polishing
-- **Week 12:** Finalize repo + slides + submission
+## 5) Project Plan
+
+- **Week 7:** Proposal, dataset finalization, repo setup
+- **Weeks 8–11:** EDA, baseline modeling, improvements, and polishing
+- **Week 12:** Finalize repository, slides, and submission
+
+---
 
 ## 6) Results
 
@@ -74,6 +86,8 @@
 
 For deployment contexts where counselor capacity is limited, raising the threshold to 0.40–0.45 would reduce the number of flagged students while still maintaining substantially higher recall than the baseline.
 
+---
+
 ## 7) Key Findings
 
 - **Class weighting is the single biggest lever for recall.** The ablation study showed that adding class weights to the baseline Logistic Regression alone boosted recall from 0.14 to 0.73 — a +59 percentage point jump — on the same 9th-grade features. This confirms that the default threshold on imbalanced data was the primary bottleneck, not the model or features.
@@ -86,27 +100,38 @@ For deployment contexts where counselor capacity is limited, raising the thresho
 
 - **Calibration improves probability interpretability at the cost of recall.** Platt scaling produced well-calibrated probabilities (useful if a school wants a meaningful risk score), but shifted the probability distribution and reduced recall at the same threshold. The recommended deployment is therefore the uncalibrated Tuned XGBoost at t = 0.30 for flagging, with the calibrated version available for probability-based risk scoring.
 
+---
+
 ## 8) Next Steps
 
-- **Deploy with adjustable thresholds.** Package the model so counselors can adjust the decision threshold based on their available intervention capacity (e.g., t = 0.30 for broad screening, t = 0.45 for targeted follow-up).
+- Deploy the model with **adjustable thresholds** so schools can tailor the alert volume to their intervention capacity.
+- Test **additional feature horizons**, such as transcript-level or later-wave data, to evaluate whether performance can improve further.
+- Validate the approach on **newer student cohorts** to assess generalizability.
+- Conduct **fairness and subgroup analysis** across demographic groups to evaluate equity.
+- Build a **stakeholder-facing dashboard** to display risk scores, explanations, and recommended priorities.
 
-- **Explore additional feature horizons.** Test whether incorporating transcript-level data or postsecondary indicators further improves prediction, and repeat the base-year vs. follow-up comparison with more granular time windows.
-
-- **Validate on newer cohorts.** The HSLS:09 cohort entered 9th grade in 2009. Applying the model to more recent student data would test generalizability and reveal whether the same predictors remain relevant.
-
-- **Investigate fairness and equity.** Conduct subgroup analysis across demographic categories (race/ethnicity, gender, socioeconomic status) to ensure the model does not systematically under-flag or over-flag specific populations.
-
-- **Build a stakeholder-facing dashboard.** Create an interactive tool (e.g., Streamlit or similar) that allows school administrators to input student-level data and receive risk scores, SHAP-based explanations, and recommended intervention priorities.
+---
 
 ## 9) How to Reproduce
 
-1. **Obtain the data:** Download the HSLS:09 public-use file from the [NCES DataLab](https://nces.ed.gov/datalab/onlinecodebook/session/codebook/4d7df048-94e7-4d1f-94da-9073be961786).
-2. **Run the Cleaning notebook** in `notebooks/` to initially clean and process the raw data.
-3. **Run the EDA notebook** in `notebooks/` to explore and preprocess the data.
-4. **Run the Preparing for Modeling notebook** in `notebooks/` to prepare features and structure the data for modeling.
-5. **Run the modeling notebook** (`Final_Modeling.ipynb`) in `notebooks/` — it handles train/test splitting, scaling, model training, tuning, calibration, and evaluation.
-6. **Environment:**
-   - Python 3.8+
-   - Key packages: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `lightgbm`, `shap`, `matplotlib`, `seaborn`
-   - Install with: `pip install pandas numpy scikit-learn xgboost lightgbm shap matplotlib seaborn`
-7. **Reproducibility:** All splits and models use `random_state=42`. The scaler is fit on training data only.
+1. Download the HSLS:09 public-use data from the [NCES DataLab](https://nces.ed.gov/datalab/onlinecodebook/session/codebook/4d7df048-94e7-4d1f-94da-9073be961786).
+2. Review `data/Link.md` for dataset access notes.
+3. Run the notebooks in order:
+   - `0 - Initial Column selection`
+   - `1 - Cleaning`
+   - `2 - EDA`
+   - `3 - Preparing For Modeling`
+   - `4 - Modeling`
+4. Use Python 3.8+ and install the required packages:
+   ```bash
+   pip install pandas numpy scikit-learn xgboost lightgbm shap matplotlib seaborn
+   ```
+5. All train/test splits and model seeds use `random_state=42` where applicable.
+
+---
+
+## 10) Presentation
+
+The final presentation is included in the repository under `slide-deck/` as:
+
+- `Capstone Presentation.pptx`
