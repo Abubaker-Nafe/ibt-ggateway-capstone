@@ -40,6 +40,7 @@
 ├── data/               ← Dataset instructions (no large raw data)
 ├── reports/            ← Figures, charts, exported results
 ├── slide-deck/         ← Final presentation
+├── project-proposal/   ← Initial Project Proposal
 └── README.md
 ```
 
