@@ -36,8 +36,8 @@
 ## 4) Repository Structure
 
 ```
-├── notebooks/          ← Colab notebooks (EDA, modeling)
-├── data/               ← Dataset instructions (no large raw data)
+├── notebooks/          ← Colab notebooks (EDA, modeling, etc..)
+├── data/               ← Dataset
 ├── reports/            ← Figures, charts, exported results
 ├── slide-deck/         ← Final presentation
 ├── project-proposal/   ← Initial Project Proposal
