@@ -40,7 +40,6 @@
 ├── data/               ← Dataset instructions (no large raw data)
 ├── reports/            ← Figures, charts, exported results
 ├── slide-deck/         ← Final presentation
-├── CONTRIBUTING.md
 └── README.md
 ```
 
